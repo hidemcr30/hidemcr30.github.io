@@ -1,16 +1,132 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Hello, world!!</h1>
-    <h2>こんにちわ世界</h2>
+<head  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="utf-8">
+  <title>HIDEAKI YAMAMURA | TechAcademy RoR6期</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <!-- 検索エンジン最適化 -->
+      <meta name="description" content="TechAcademyのRuby on Rails オンラインブートキャンプ第6期受講生のポートフォリオサイト" />
+      <meta name="keywords" content="山村豪尭 Techacademy RubyonRails HTML CSS ポートフォリオ" />
+      <!-- インデックスはしたくない -->
+      <meta name="robots" content="noindex" />
+      <!-- OGPの設定 -->
+      <meta property="og:locale" content="ja_JP" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Hideaki Yamamura" />
+      <meta property="og:description" content="TechAcademyのRuby on Rails オンラインブートキャンプ第6期受講生のポートフォリオサイト"　/>
+      <meta property="og:url" content=”あとで書く” />
+      <meta property="og:image" content=”あとで設定する” />
+
+
+  <!-- FontAwesomeの読み込み -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+  <!-- BootstrapのCSS読み込み -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Bootstrapカスタム用CSS -->
+  <link rel="stylesheet" href="./portfolio.css">
+  <!-- jQuery読み込み -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<!-- ここから本文 -->
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HIDEAKI YAMAMURA</a>
+        </div>
+        <div class="collapse navbar-collapse" id="site-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="#myworks">Works</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="page-header">
+        <h1>山村 豪尭 Portfolio</h1>
+        <img src="./img/profile.png" alt="" class="logohover"/>
+      </div>
+      <div class="biograpy">
+        <div class="heading">
+          <h2>自己紹介</h2>
+          <P>名古屋の広告代理店勤務。営業➔企画制作➔Web広告プランを経て自社事業開発の部署に。<br />
+          Web広告の部署ではSEOや広告タグ設置のために最低限のHTMLとJavascriptを自習するも、<br>
+          体系的には学習できていません。このコースを通じて単純なHTMLだけでなく動的なアプリを<br />
+          作れるようになってサービス開発をしたいと思っています。
+          </P>
+        </div>
+      </div>
+      <div class="heading" id="myworks">
+        <h2>My Works</h2>
+      </div>
+      <div class="works-wrapper">
+        <div class="col-sm-6 col-md-3">
+          <div class="work-icon">
+            <span class="fa fa-file fa-4x" aria-hidden="true"></span>
+            <h3>メッセージボード</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="work-icon">
+            <span class="fa fa-twitter-square fa-4x" aria-hidden="true"></span>
+            <h3>twitter クローン</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="work-icon">
+            <span class="fa fa-book fa-4x" aria-hidden="true"></span>
+            <h3>モノリスト</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="work-icon">
+            <span class="fa fa-spinner fa-4x fa-spin" aria-hidden="true"></span>
+            <h3>オリジナルアプリ</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ソーシャルアイコン -->
+  <div class="row">
+    <div class="icon col-sm-3">
+      <span class="fa fa-github" aria-hidden="true"></span>
+      <div class="icon-caption">Follow onGithub</div>
+    </div>
+  </div>
+
+      <div class="row">
+        <div class="icon col-sm-3 hidden-xs">
+          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+          <div class="icon-caption">メール</div>
+        </div>
+        <div class="content col-sm-9">
+          <h2>メールによるお問い合わせ</h2>
+          <p>
+            プライバシーポリシーをご確認、ご同意の上、送信ボタンを押してください。<br>
+            お問い合わせの回答は、受付日から3営業日以内をめどにご返信差し上げます。
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">© 2015 HIDEAKI YAMAMURA.</div>
+    </footer>
   </body>
 </html>
