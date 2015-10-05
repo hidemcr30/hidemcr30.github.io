@@ -37,9 +37,13 @@ body {
 
 .works-wrapper{
   height: 600px;
-  padding: 20px 0s;
+  padding: 20px 0 20px 0;
   background-color: #f7f7f7;
   text-align: center;
+}
+
+.col-sm-6{
+  padding-top: 30px;
 }
 
 
@@ -91,10 +95,6 @@ body {
   color: #55acee;
 }
 
-.content h2 {
-  margin-top: 0;
-  padding-bottom: 15px;
-}
 .content p {
   margin-bottom: 30px;
 }
