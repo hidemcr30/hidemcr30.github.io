@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <meta charset="utf-8">
   <title>HIDEAKI YAMAMURA | TechAcademy RoR6期</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-      <!-- 検索エンジン最適化 -->
-      <meta name="description" content="TechAcademyのRuby on Rails オンラインブートキャンプ第6期受講生のポートフォリオサイト" />
-      <meta name="keywords" content="山村豪尭 Techacademy RubyonRails HTML CSS ポートフォリオ" />
-      <!-- インデックスはしたくない -->
-      <meta name="robots" content="noindex" />
-      <!-- OGPの設定 -->
-      <meta property="og:locale" content="ja_JP" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="Hideaki Yamamura" />
-      <meta property="og:description" content="TechAcademyのRuby on Rails オンラインブートキャンプ第6期受講生のポートフォリオサイト"　/>
-      <meta property="og:url" content=”あとで書く” />
-      <meta property="og:image" content=”あとで設定する” />
+  <!-- 検索エンジン最適化 -->
+  <meta name="description" content="TechAcademyのRuby on Rails オンラインブートキャンプ第6期受講生のポートフォリオサイト" />
+  <meta name="keywords" content="山村豪尭 Techacademy RubyonRails HTML CSS ポートフォリオ" />
+  <!-- インデックスはしたくない -->
+  <meta name="robots" content="noindex" />
+  <!-- OGPの設定 -->
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hideaki Yamamura" />
+  <meta property="og:description" content="TechAcademyのRuby on Rails オンラインブートキャンプ第6期受講生のポートフォリオサイト" 　/>
+  <meta property="og:url" content=”あとで書く” />
+  <meta property="og:image" content=”あとで設定する” />
 
 
   <!-- FontAwesomeの読み込み -->
@@ -33,18 +34,30 @@
 </head>
 
 <!-- ここから本文 -->
-<body>
-<!-- Google タグマネージャー -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NKM8GJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NKM8GJ');</script>
-<!-- End Google Tag Manager -->
 
-  
+<body>
+  <!-- Google タグマネージャー -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NKM8GJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NKM8GJ');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -70,74 +83,101 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
       <div class="page-header">
         <h1>山村 豪尭 Portfolio</h1>
-        <img src="./img/profile.png" alt="" class="logohover"/>
+        <img src="./img/profile.png" alt="" />
       </div>
       <div class="biograpy">
-        <div class="heading">
-          <h2>自己紹介</h2>
-          <P>名古屋の広告代理店勤務。営業➔企画制作➔Web広告プランを経て自社事業開発の部署に。<br />
-          Web広告の部署ではSEOや広告タグ設置のために最低限のHTMLとJavascriptを自習するも、<br>
-          体系的には学習できていません。このコースを通じて単純なHTMLだけでなく動的なアプリを<br />
-          作れるようになってサービス開発をしたいと思っています。
-          </P>
-        </div>
+        <h2>自己紹介</h2>
+        <p>名古屋の広告代理店勤務。
+          <br />営業➔企画制作➔Web広告プランを経て自社事業開発の部署に。
+          <br />Web広告の部署ではSEOや広告タグ設置のために最低限のHTMLを覚えた。
+          <br />TechAcademyのオンラインコースを通じて単純なHTMLだけでなくWebアプリを
+          <br />作れるようになってサービス開発をしたいと思っています。
+          <br />趣味は車関係（特にF1観戦）、スノーボード、など。
+        </p>
       </div>
-      <div class="heading" id="myworks">
-        <h2>My Works</h2>
+    </div>
+    <div class="myskill">
+      <h2>My Skills</h2>
+      <div class="skill-detail">
+        <table border="0">
+          <tr>
+            <td>
+              <img src="./img/HTML5_Logo.png" alt="html5" />
+            </td>
+            <td>
+              <img src="./img/css3.png" alt="css3" />
+            </td>
+            <td>
+              <img src="./img/ruby-logo.png" alt="ruby" />
+            </td>
+            <td>
+              <img src="./img/ror_logo.png" alt="Ruby on Rails" />
+            </td>
+            <td>
+              <img src="./img/seo-logo.png" alt="seo web広告" />
+            </td>
+          </tr>
+          <tr>
+            <td>html5</td>
+            <td>CSS</td>
+            <td>Ruby</td>
+            <td>Ruby on Rails</td>
+            <td>Web広告/SEO</td>
+          </tr>
+        </table>
       </div>
+    </div>
+    <div id="myworks">
+      <h2>My Works</h2>
       <div class="works-wrapper">
-        <div class="col-sm-6 col-md-3">
+        <div class="col-md-3">
           <div class="work-icon">
             <span class="fa fa-file fa-4x" aria-hidden="true"></span>
             <h3>メッセージボード</h3>
+            <p>
+              Railsの機能をいくつか紹介するためのメッセージボードアプリケーションです。
+            </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="col-md-3">
           <div class="work-icon">
             <span class="fa fa-twitter-square fa-4x" aria-hidden="true"></span>
             <h3>twitter クローン</h3>
+            <p>
+              ユーザーが新規登録/ログイン/マイクロポストを投稿/他のユーザーをフォローして、タイムラインを表示できるアプリです。
+            </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="col-md-3">
           <div class="work-icon">
             <span class="fa fa-book fa-4x" aria-hidden="true"></span>
             <h3>モノリスト</h3>
+            <p>
+             Product Advertising APIを用いてAmazonの商品を検索し、自分が持っているもの・欲しい物を共有するサービスです。
+            </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="col-md-3">
           <div class="work-icon">
             <span class="fa fa-spinner fa-4x fa-spin" aria-hidden="true"></span>
             <h3>オリジナルアプリ</h3>
+            <p>
+             まだ構想段階です。まだ構想段階です。まだ構想段階です。まだ構想段階です。まだ構想段階です。まだ構想段階です。まだ構想段階です。
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-  <!-- ソーシャルアイコン -->
-  <div class="row">
-    <div class="icon col-sm-3">
-      <span class="fa fa-github" aria-hidden="true"></span>
-      <div class="icon-caption">Follow onGithub</div>
-    </div>
-  </div>
 
-      <div class="row">
-        <div class="icon col-sm-3 hidden-xs">
-          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-          <div class="icon-caption">メール</div>
-        </div>
-        <div class="content col-sm-9">
-          <h2>メールによるお問い合わせ</h2>
-          <p>
-            プライバシーポリシーをご確認、ご同意の上、送信ボタンを押してください。<br>
-            お問い合わせの回答は、受付日から3営業日以内をめどにご返信差し上げます。
-          </p>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="copyright">© 2015 HIDEAKI YAMAMURA.</div>
-    </footer>
-  </body>
+
+  <!-- ソーシャルアイコン -->
+  <h2>My Github</h2>
+  <a href="https://github.com/hidemcr30" target="_blank" title="Github"><span class="fa fa-github" aria-hidden="true"></span></a>
+  <!-- フッター -->
+  <footer>
+    <div class="copyright">© 2015 HIDEAKI YAMAMURA.</div>
+  </footer>
+</body>
+
 </html>

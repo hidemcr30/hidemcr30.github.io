@@ -1,28 +1,32 @@
 body {
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 50px;
 }
-
+h2 {
+  text-align: center;
+}
 .navbar {
-  border-radius: 0; 
+  border-radius: 0;
   background-color: black;
 }
-
-.navbar-default .navbar-brand{
-  color: #FFF;
+.navbar-default .navbar-brand {
+  color: #fff;
 }
-
+.navbar-default .navbar-nav>.active>a {
+  background-color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fff
+}
 .row {
   margin-bottom: 50px;
 }
-
-.page-header{
+.page-header {
   text-align: center;
-  text-shadow: 2px 2px 0px #bfbfbf;
+  text-shadow: 1px 1px 0px #bfbfbf;
 }
-
-.page-header img{
-  max-width:200px;
+.page-header img {
+  max-width: 200px;
   border: 5px solid;
   border-top-color: #FF9900;
   border-right-color: #B40097;
@@ -30,98 +34,72 @@ body {
   border-left-color: #0D58A6;
   border-radius: 50%;
 }
-
-.biograpy{
+.biograpy {
   text-align: center;
 }
-
-.works-wrapper{
-  height: 600px;
+.works-wrapper {
+  min-height: 300px;
   padding: 20px 0 20px 0;
   background-color: #f7f7f7;
   text-align: center;
 }
-
-.col-sm-6{
+.col-sm-6 {
   padding-top: 30px;
 }
-
-
-.heading{
-  padding-bottom: 20px;
+.heading {
+  padding-bottom: px;
   color: #5f5d60;
 }
-
-.heading h2{
-  font-weight: normal;
+.skill-detail {
+  margin-top: 20px;
 }
-
-.work{
-  float: left;
-  width: 25%;
+.skill-detail td {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 3% 0 0;
 }
-
-.work-icon{
+.skill-detail img {
+  width: 40%;
+  margin: 0 3% 0 0;
+}
+.work-icon {
   position: relative;
 }
-
-.work-icon p{
+.work-icon p {
   padding-top: 15px;
   width: 100%;
 }
 
-.txt-contents{
-  width: 80%;
-  display: inline-block;
-  font-size: 12px;
-  color: #b3aeb5;
-}
-
-.heading h3{
-  font-weight: normal;
-}
-
-
-.icon {
-  text-align: center;
-}
-
-.icon .fa{
-  margin-bottom: 10px;
+.works-wrapper .icon .fa {
+  margin-bottom: 5px;
   font-size: 50px;
 }
-
-.fa-twitter-square{
+.fa-file {
+  color: #66cdaa;
+}
+.fa-twitter-square {
   color: #55acee;
 }
-
+.fa-book {
+  color: #ff8c00;
+}
 .content p {
   margin-bottom: 30px;
 }
-
+.fa-github {
+  display: inline-block;
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 footer {
   border-top: 1px solid#e7e7e7;
   background-color: #f8f8f8;
   text-align: center;
 }
-
 .copyright {
   padding: 20px 0;
   font-size: 12px;
   color: #666;
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 12px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  .panel-title {
-    font-size: 14px;
-  }
 }
